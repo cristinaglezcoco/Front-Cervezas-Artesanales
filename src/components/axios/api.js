@@ -14,6 +14,6 @@ const APIHeader = {
 export const API = axios.create({
   headers: APIHeader,
   timeout: 10000,
-  baseURL: "https://node-cervezas-artesanales.vercel.app",
+  baseURL: "http://localhost:5001",
 });
 

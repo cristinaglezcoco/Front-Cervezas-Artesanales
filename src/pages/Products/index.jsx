@@ -25,6 +25,9 @@ function Products() {
             Descubre la pasión y la calidad en cada sorbo, disponible ahora para
             tu disfrute.
           </p>
+          <div className="beer-button">
+            <button><Link to="/area">¡Crea tú propia cerveza!</Link></button>
+          </div>
         </div>
         <ProductsList />
         {/* <ProductsPagination /> */}

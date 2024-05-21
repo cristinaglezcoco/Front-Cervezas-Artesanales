@@ -12,7 +12,7 @@ export const BeersProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://node-cervezas-artesanales.vercel.app/cervezas");
+        const response = await axios.get("http://localhost:5001/cervezas");
         setBeers(response.data);
       } catch (error) {
         console.error("Error en la solicitud Axios:", error);

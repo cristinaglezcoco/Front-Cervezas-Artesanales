@@ -18,6 +18,7 @@ import ProductInfo from "../pages/ProductInfo";
 import { CartProvider } from "./context/cartContext";
 import AuthRoute from "./AuthRoute/AuthRoute";
 import Profile from "../pages/Account/Profile";
+import Area from "../pages/Area/Area";
 
 function App() {
   const saveUser = useUsersContext();
@@ -39,6 +40,7 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Account/>} />
               <Route path="/profile" element={<AuthRoute element={<Profile/>}/>}></Route>
+              <Route path="/area" element={<AuthRoute element={<Area/>}/>}></Route>
             </Routes>
           </CartProvider>
         </BeersProvider>
